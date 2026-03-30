@@ -16,13 +16,13 @@ texts = [
 for t in texts:
     results = emotion_detector(t)
     dominant = results.get("dominant_emotion","")
+    print(t, "->", dominant"\n")
 
+#result1 = emotion_detector(text1)
+#dominant1 = result1.get("dominant_emotion", "")
+#print(text1,"->", dominant1)
 
-result1 = emotion_detector(text1)
-dominant1 = result1.get("dominant_emotion", "")
-print(text1,"->", dominant1)
-
-result2 = emotion_detector(text2)
-dominant2 = result2.get("dominant_emotion","")
-print(text2, dominant2)
+#result2 = emotion_detector(text2)
+#dominant2 = result2.get("dominant_emotion","")
+#print(text2, dominant2)
 
