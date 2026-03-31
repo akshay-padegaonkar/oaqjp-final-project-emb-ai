@@ -7,6 +7,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def main():
+    """Notice of server running"""
     return "Emotion Detection API running"
 
 @app.route("/emotionDetector", methods=["POST"])
