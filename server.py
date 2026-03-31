@@ -12,6 +12,8 @@ def detect_emotion():
     data = request.get_json()
     text = data.get("text","")
     result = emotion_detector(text)
+    if result["dominant_emotion"] is None:
+        return "Invalid text! Please try again!"
     return jsonify(result)
 
 if __name__ == "__main__":
